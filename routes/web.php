@@ -11,10 +11,32 @@
 |
 */
 
+/* --------------------------------------------
+ * Landing page
+ * --------------------------------------------
+ */
 Route::get('/', function () {
     return view('welcome');
 });
 
+/* --------------------------------------------
+ * Authentication routes
+ * --------------------------------------------
+ */
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+/* --------------------------------------------
+ * Admin only routes
+ * --------------------------------------------
+ */
+Route::group([
+	'prefix' => '/admin', 
+    'as' => 'admin::',
+    'middleware' => ['auth'] 
+    ], function(){
+	
+		Route::get('/', function(){
+			// Main dashboard landing page
+		});
+});
+

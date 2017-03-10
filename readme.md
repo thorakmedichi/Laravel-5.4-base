@@ -9,9 +9,10 @@
 
 ## Custom Base Instructions
 - Clone the repo onto your local computer
+- Create your Database and setup your users and priviledges. If you are using homestead (recommended) then this has already been done for you
+- Modify your .env file as needed
 - Run 'npm install' in your homestead vagrant box to install the package.json modules
 - Run 'composer install' in your homestead vagrant box to install the composer.json packages
-- Create your Database
 - Run 'php artisan migrate' to install the base tables
 - Run 'php artisan db:seed' to seed the base tables
 

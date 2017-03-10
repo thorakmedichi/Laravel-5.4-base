@@ -7,6 +7,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Custom Base Instructions
+- Clone the repo onto your local computer
+- Run 'npm install' in your homestead vagrant box to install the package.json modules
+- Run 'composer install' in your homestead vagrant box to install the composer.json packages
+- Create your Database
+- Run 'php artisan migrate' to install the base tables
+- Run 'php artisan db:seed' to seed the base tables
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
